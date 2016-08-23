@@ -12,6 +12,7 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys C3173AA6 &
         openssl \
         ca-certificates\
         libc6 \
+        gnupg \
         ruby$RUBY_VERSION \
         ruby$RUBY_VERSION-dev && \
 
