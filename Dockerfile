@@ -11,6 +11,7 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys C3173AA6 &
     apt-get install -yq --no-install-recommends \
         openssl \
         ca-certificates\
+        libc6 \
         ruby$RUBY_VERSION \
         ruby$RUBY_VERSION-dev && \
 
