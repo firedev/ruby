@@ -14,6 +14,8 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys C3173AA6 &
         ca-certificates \
         ruby$RUBY_VERSION \
         ruby$RUBY_VERSION-dev && \
+    apt-get clean && \
+    apt-get -yq autoremove && \
 
     # clean up
     rm -rf /var/lib/apt/lists/* && \
